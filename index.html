@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Monitoring System</title>
+  <link rel="shortcut icon" href="assets/file.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+  <nav>
+    <img src="assets/file.png" alt="">
+    <div class="title">Human Monitoring System</div>
+  </nav>
+  <div class="main">
+    <video id="webcam" autoplay></video>
+    <canvas id="canvas"></canvas>
+    <div id="info" class="info"></div>
+    <div class="about-section">
+      <h2>About This Page</h2>
+      <p>This page uses the TensorFlow.js Coco-SSD model to detect humans and objects in real-time using your webcam. 
+      The detected objects are highlighted with bounding boxes and labels, while the total number of humans is displayed on the screen.</p>
+    </div>
+  </div>
+  <footer>
+    Human Monitoring System made by Tawfique Mahmood
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
